@@ -1,0 +1,10 @@
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\bin\Services.dll.config
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\bin\Services.dll
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\bin\Services.pdb
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\bin\Newtonsoft.Json.dll
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\bin\Newtonsoft.Json.xml
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\obj\Debug\Services.csproj.CopyComplete
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\obj\Debug\Services.dll
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\obj\Debug\Services.pdb
+C:\Users\rnyati\Desktop\CityWiki\CityWiki\Services\obj\Debug\Services.csprojAssemblyReference.cache

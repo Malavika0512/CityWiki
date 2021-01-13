@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://webstrar80.fulton.asu.edu/Page3/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://webstrar80.fulton.asu.edu/Page3/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://webstrar80.fulton.asu.edu/Page3/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_calculateDistanceAndDuration_InputMessage">
+    <wsdl:part name="parameters" element="tns:calculateDistanceAndDuration" />
+  </wsdl:message>
+  <wsdl:message name="IService1_calculateDistanceAndDuration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calculateDistanceAndDurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getWeatherDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:getWeatherDetails" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getWeatherDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getWeatherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getNearestStore_InputMessage">
+    <wsdl:part name="parameters" element="tns:getNearestStore" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getNearestStore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getNearestStoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSolarEnergyIndex_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSolarEnergyIndex" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSolarEnergyIndex_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSolarEnergyIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetElectricityRates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetElectricityRates" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetElectricityRates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetElectricityRatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFuelStations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelStations" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFuelStations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFuelStationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHotelData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHotelData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHotelData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHotelDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getnews_InputMessage">
+    <wsdl:part name="parameters" element="tns:getnews" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getnews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getnewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEarthquakeIndex_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEarthquakeIndex" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetEarthquakeIndex_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEarthquakeIndexResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="calculateDistanceAndDuration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/calculateDistanceAndDuration" message="tns:IService1_calculateDistanceAndDuration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/calculateDistanceAndDurationResponse" message="tns:IService1_calculateDistanceAndDuration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getWeatherDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getWeatherDetails" message="tns:IService1_getWeatherDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getWeatherDetailsResponse" message="tns:IService1_getWeatherDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getNearestStore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getNearestStore" message="tns:IService1_getNearestStore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getNearestStoreResponse" message="tns:IService1_getNearestStore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSolarEnergyIndex">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSolarEnergyIndex" message="tns:IService1_GetSolarEnergyIndex_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSolarEnergyIndexResponse" message="tns:IService1_GetSolarEnergyIndex_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetElectricityRates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetElectricityRates" message="tns:IService1_GetElectricityRates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetElectricityRatesResponse" message="tns:IService1_GetElectricityRates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelStations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFuelStations" message="tns:IService1_GetFuelStations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFuelStationsResponse" message="tns:IService1_GetFuelStations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHotelData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetHotelData" message="tns:IService1_GetHotelData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetHotelDataResponse" message="tns:IService1_GetHotelData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getnews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getnews" message="tns:IService1_getnews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getnewsResponse" message="tns:IService1_getnews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEarthquakeIndex">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetEarthquakeIndex" message="tns:IService1_GetEarthquakeIndex_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetEarthquakeIndexResponse" message="tns:IService1_GetEarthquakeIndex_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="calculateDistanceAndDuration">
+      <soap:operation soapAction="http://tempuri.org/IService1/calculateDistanceAndDuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWeatherDetails">
+      <soap:operation soapAction="http://tempuri.org/IService1/getWeatherDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNearestStore">
+      <soap:operation soapAction="http://tempuri.org/IService1/getNearestStore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSolarEnergyIndex">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSolarEnergyIndex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetElectricityRates">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetElectricityRates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelStations">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFuelStations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHotelData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetHotelData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getnews">
+      <soap:operation soapAction="http://tempuri.org/IService1/getnews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEarthquakeIndex">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetEarthquakeIndex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://webstrar80.fulton.asu.edu/Page3/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
